@@ -1,0 +1,29 @@
+<p>view-mobile works!</p>
+
+<!-- <form #form1="ngForm" (ngSubmit) = "onSubmit(form1.value)">
+    Mobile IMEI NO: <input type="text" name="imeiNo"><br>
+    
+    <input type="submit"  value="VIEW MOBILE" >
+ </form>
+
+ <p>view-all-mobile works!</p>
+<form  (ngSubmit) = "onSubmit()">
+    <input type="submit"  value="VIEW ALL MOBILE" >
+ </form> -->
+
+ <div>
+    <table>
+        <tr>
+            <th>IMEI No</th>
+            <th>BRAND</th>
+            <th>MODEL</th>
+            <th>PRICE</th>
+        </tr>
+        <tr *ngFor = "let mobile of mobiles">
+            <td>{{mobile.imeiNo}}</td>
+            <td>{{mobile.brand}}</td>
+            <td>{{mobile.model}}</td>
+            <td>{{mobile.price}}</td>
+        </tr>
+    </table>
+ </div>

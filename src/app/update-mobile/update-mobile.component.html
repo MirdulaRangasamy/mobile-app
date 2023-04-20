@@ -1,0 +1,8 @@
+<p>update-mobile works!</p>
+<form #form1="ngForm" (ngSubmit) = "onSubmit()">
+    Mobile IMEI NO: <input type="text" [(ngModel)]="imeiNoValue" name="imeiNo" required><br>
+    Mobile BRAND: <input type="text" [(ngModel)]="brandValue" name="brand" required><br>
+    Mobile MODEL:<input type="text" [(ngModel)]="modelValue" name="model" required><br>
+    Mobile PRICE:<input type="text" [(ngModel)]="priceValue" name="price" required><br>
+    <input type="submit"  value="UPDATE MOBILE" >
+ </form>
